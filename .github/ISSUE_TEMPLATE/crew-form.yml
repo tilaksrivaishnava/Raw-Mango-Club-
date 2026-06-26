@@ -1,0 +1,37 @@
+name: "Crew & Cast Sign-Up"
+description: "Submit your details for our upcoming indie film productions."
+title: "[Crew Submission]: "
+labels: ["crew-database"]
+body:
+  - type: input
+    id: full_name
+    attributes:
+      label: "Full Name"
+      placeholder: "e.g., Jane Doe"
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: "Primary Role"
+      options:
+        - "Actor / Cast"
+        - "Director"
+        - "Cinematographer (DP)"
+        - "Sound Recordist"
+        - "Editor"
+        - "Production Assistant"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: "Email or Phone Number"
+    validations:
+      required: true
+  - type: textarea
+    id: portfolio
+    attributes:
+      label: "Portfolio / IMDb / Reel Links"
+      placeholder: "Paste links to your work here..."
